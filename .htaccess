@@ -1,0 +1,4 @@
+RewriteEngine On # Activer le module Rewrite
+RewriteCond %books.php !-f
+RewriteRule ^books/?$ books.php [NC,L]
+RewriteRule ^[^/]+/(\d+)$ books.php?isbn=$1
