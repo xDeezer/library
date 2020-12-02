@@ -9,9 +9,9 @@ Afin d'y accéder, il faudra se rendre sur le git et télécharger les fichiers 
 Il faudra placer le dossier contenant le projet au sein du dossier de configuration wamp, et plus précisément dans le dossier **www**.
 
 Une fois placé, il faudra effectuer un clic gauche sur l'icone de wampserver depuis votre barre de tâche et sélectionnez **PhpMyAdmin** pour gérer la base de donnée.
-Vous pourrez vous connecter à cette base local grâce à l'identifiant **"root"** et en **laissant le champ de mot de passe vide**.
+Vous pourrez vous connecter à cette base local grâce à l'identifiant **"root"** et en **laissant le champ de mot de passe vide**. Si jamais les identifiés ont été modifiés, n'hésitez pas à rentrer ces identifiants.
 
-Par la suite, il vous faudra créer une nouvelle base de donnée qui se nommera **library**. Vous vous rendrez ensuite sur **l'onglet SQL**, et **collerez puis executerez cette commande** afin de créer la table les lignes nécessaires à l'execution de l'API :
+Par la suite, il vous faudra créer une nouvelle base de donnée qui se nommera **libraryAPI**. Vous vous rendrez ensuite sur **l'onglet SQL**, et **collerez puis executerez cette commande** afin de créer la table les lignes nécessaires à l'execution de l'API :
         
         CREATE TABLE IF NOT EXISTS `books` (
         `isbn` text NOT NULL,
